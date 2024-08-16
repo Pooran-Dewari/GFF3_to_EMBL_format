@@ -89,3 +89,15 @@ FT                   /standard_name="SIGCAN1A009845T1"
 
 ```
 
+### Note : Some warning on STDOUT while creating .embl file, don't know what it means!
+
+```
+10:52:42 WARNING feature: Unknown qualifier 'GO:0014731' - skipped
+10:52:42 WARNING feature: Unknown qualifier 'GO:0090315' - skipped
+10:52:42 WARNING feature: Unknown qualifier 'GO:0010763' - skipped
+10:52:42 WARNING feature: Unknown qualifier 'GO:0051895' - skipped
+10:52:42 WARNING feature: Unknown qualifier 'GO:0010801' - skipped
+10:52:42 WARNING feature: Unknown qualifier 'GO:0015311' - skipped============ ]
+10:52:42 WARNING feature: Unknown qualifier 'GO:0019205' - skipped============ ]
+10:52:42 WARNING feature: Unknown qualifier 'GO:0044773' - skipped============ ]
+```
