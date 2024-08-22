@@ -15,6 +15,11 @@ pip install git+https://github.com/NBISweden/EMBLmyGFF3.git
 ```
 
 ### Run
+
+If error: AttributeError: module 'Bio.SeqFeature' has no attribute 'SimpleLocation'  
+try updating biopython  
+pip install --upgrade biopython  
+
 ```
 EMBLmyGFF3 SIGCAN1A.FA.dc.gff3.gz fSigCan.fa.gz \
         --topology linear \
