@@ -20,7 +20,7 @@ EMBLmyGFF3 SIGCAN1A.FA.dc.gff3.gz fSigCan.fa.gz \
         --topology linear \
         --molecule_type 'genomic DNA' \
         --transl_table 1  \
-        --species 'Siganus rivulatus' \
+        --species 'Siganus canaliculatus' \
         --locus_tag SIGCANQ1 \
         --project_id PRJEB79005 \
         --author 'Dana Albatesh' \
