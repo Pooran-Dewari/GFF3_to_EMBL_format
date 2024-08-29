@@ -142,7 +142,7 @@ Fix errors:
 awk '{print $12"d;"}' ORS=' ' validation.error.txt
 
 # run sed to remove these lines
-sed -e '3307d; 1025142d; 1572539d; 2460843d; 2822777d; 3289616d; 3682316d; 4630408d; 4630538d; 5529944d; 5991512d; 6322584d; 6362009d; 6372384d; 7010299d; 8318281d; 8417596d; 8418930d; 8832303d; 8832736d; 8835712d; 9354046d; 9425939d; 10405343d' SIGCAN1A_v1.embl > SIGCAN1A_v1_fixed.embl
+sed -e '3307d; 1025142d; 1572539d; 2460843d; 2822777d; 3289616d; 3682316d; 4630408d; 4630538d; 5529944d; 5991512d; 6322584d; 6362009d; 6372384d; 7010299d; 8318281d; 8417596d; 8418930d; 8832303d; 8832736d; 8835712d; 9354046d; 9425939d; 10405343d' SIGCAN1A.embl > SIGCAN1A_fixed.embl
 
 #note: perform validation step again to make sure errors have been fixed.
 ```
