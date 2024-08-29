@@ -108,6 +108,35 @@ FT                   /standard_name="SIGCAN1A009845T1"
 ```
 
 ### Fix validation error
+
+Validation of EMBL file throws these errors:  
+```
+ERROR: Abutting features cannot be adjacent between neighbouring exons. [ line: 3307 of SIGCAN1A_v1.embl.gz]  
+ERROR: Abutting features cannot be adjacent between neighbouring exons. [ line: 1025142 of SIGCAN1A_v1.embl.gz]  
+ERROR: Abutting features cannot be adjacent between neighbouring exons. [ line: 1572539 of SIGCAN1A_v1.embl.gz]  
+ERROR: Abutting features cannot be adjacent between neighbouring exons. [ line: 2460843 of SIGCAN1A_v1.embl.gz]  
+ERROR: Abutting features cannot be adjacent between neighbouring exons. [ line: 2822777 of SIGCAN1A_v1.embl.gz]  
+ERROR: Abutting features cannot be adjacent between neighbouring exons. [ line: 3289616 of SIGCAN1A_v1.embl.gz]  
+ERROR: Abutting features cannot be adjacent between neighbouring exons. [ line: 3682316 of SIGCAN1A_v1.embl.gz]  
+ERROR: Abutting features cannot be adjacent between neighbouring exons. [ line: 4630408 of SIGCAN1A_v1.embl.gz]  
+ERROR: Abutting features cannot be adjacent between neighbouring exons. [ line: 4630538 of SIGCAN1A_v1.embl.gz]  
+ERROR: Abutting features cannot be adjacent between neighbouring exons. [ line: 5529944 of SIGCAN1A_v1.embl.gz]  
+ERROR: Abutting features cannot be adjacent between neighbouring exons. [ line: 5991512 of SIGCAN1A_v1.embl.gz]  
+ERROR: Abutting features cannot be adjacent between neighbouring exons. [ line: 6322584 of SIGCAN1A_v1.embl.gz]  
+ERROR: Abutting features cannot be adjacent between neighbouring exons. [ line: 6362009 of SIGCAN1A_v1.embl.gz]  
+ERROR: Abutting features cannot be adjacent between neighbouring exons. [ line: 6372384 of SIGCAN1A_v1.embl.gz]  
+ERROR: Abutting features cannot be adjacent between neighbouring exons. [ line: 7010299 of SIGCAN1A_v1.embl.gz]  
+ERROR: Abutting features cannot be adjacent between neighbouring exons. [ line: 8318281 of SIGCAN1A_v1.embl.gz]
+ERROR: Abutting features cannot be adjacent between neighbouring exons. [ line: 8417596 of SIGCAN1A_v1.embl.gz]
+ERROR: Abutting features cannot be adjacent between neighbouring exons. [ line: 8418930 of SIGCAN1A_v1.embl.gz]
+ERROR: Abutting features cannot be adjacent between neighbouring exons. [ line: 8832303 of SIGCAN1A_v1.embl.gz]
+ERROR: Abutting features cannot be adjacent between neighbouring exons. [ line: 8832736 of SIGCAN1A_v1.embl.gz]
+ERROR: Abutting features cannot be adjacent between neighbouring exons. [ line: 8835712 of SIGCAN1A_v1.embl.gz]
+ERROR: Abutting features cannot be adjacent between neighbouring exons. [ line: 9354046 of SIGCAN1A_v1.embl.gz]
+ERROR: Abutting features cannot be adjacent between neighbouring exons. [ line: 9425939 of SIGCAN1A_v1.embl.gz]
+ERROR: Abutting features cannot be adjacent between neighbouring exons. [ line: 10405343 of SIGCAN1A_v1.embl.gz]
+```
+Fix errors:  
 ```
 # get line numbers with errors in them
 awk '{print $12"d;"}' ORS=' ' validation.error.txt
